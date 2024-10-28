@@ -141,10 +141,31 @@ input[type="text"], input[type="Masukkan Nilai T"] {
   <input type="text" id="Input Perulangan Meylisa" name="IInput Perulangan Meylisa" required><br><br>
   
   
-  <input type="submit" value="Hasil Input">
 </form>
 
+<body>
+<form method="POST" action="03 output perulangan nama .php">
+        <label for="jumlah">Pilih berapa kali akan diulang:</label><br><br>
+        <select id="jumlah" name="jumlah" min="1" required>
+            <!-- Loop jumlah 1 sampai 2000 -->
+            <!-- Kamu juga bisa menggunakan script untuk mengisi jumlah secara otomatis -->
+            <option value=""> --- Pilih Jumlah ---</option>
+            <!-- Pilihan jumlah dari 1 hingga 2000 -->
+            <script>
+                for (let i = 1; i <= 2000; i++) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                }
+            </script>
+
+    
+            </script><br><br>
+        </select>
+        <input type="submit" value="Proses ->">
+    </form>
+
+
 </body>
+
 </html>
 
 <?php

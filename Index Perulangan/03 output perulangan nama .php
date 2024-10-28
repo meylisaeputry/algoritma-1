@@ -1,47 +1,21 @@
-   
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
 <style>
-        /* Styling umum untuk body */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffe6f0; /* Warna latar belakang pink muda */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Container untuk form */
-        .login-container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-            width: 350px;
-            border: 2px solid #ff99cc; /* Border pink */
-        }
-
         /* Container untuk form */
         .login-container2 {
-            background-color: #fff;
-            padding: 30px;
-            width: 300px;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-            border: 2px solid #ff99cc; /* Border pink */
-            border-radius: 10px;
+            
             color: #ff3399; /* Warna teks judul pink lebih tua */
-
-        }
-        
-        /* Container untuk form */
-        .login-container3 {
-            color: #ff3399; /* Warna teks judul pink lebih tua */
-            background-color: #fff;
 
         }
         /* Judul form */
         h2 {
-            text-align: center;
             margin-bottom: 30px;
             color: #ff3399; /* Warna teks judul pink lebih tua */
         }
@@ -79,27 +53,32 @@
         }
         </style>
         <div class="login-container">
+        </head>
+  <body>
 <h2> Selamat Meylisa Kamu Berhasil Login</h2>
 
 <div class="login-container2">
       
 <?php
+$jumlah = $_POST['jumlah'];
 //Mulai
 //Iniliasisasi variabel i dengan nilai 1.
-//Lakukan perulangan selama i kurang dari atau sama dengan 100:
-for ($i = 1; $i <= 10; $i++)
-//Cetak nilai i.
-{
-echo $i . "nama saya Meylisa eka putry<br>";
+//Lakukan perulangan selama i kurang dari atau sama dengan 1000:
+//Cetak nilai i
 //Akhiri perulangan
-}
-
 //Selesai
 ?>
+<?php
+// Perulangan untuk menampilkan "Nama saya M"
+for ($i = 1; $i <= $jumlah; $i++) {
+      echo "Nama saya Meylisa ke " . $i . "<br>";
+}
+?>
 
-
+<body>
+<h1> Hasil Perulangan sebanyak <?php echo $_POST['jumlah'];?> kali</h1>
 <p>
-<a href="03 index perulangan meylisa .php">
+<a href="03 index perulangan meylisa .php" >
       <button>Kembali ke Input</button>
 </a>
 </p>
@@ -112,3 +91,5 @@ echo $i . "nama saya Meylisa eka putry<br>";
       <button>Folder Awal</button>
 </a>
 <br><br><strong>By meylisa eka putry</strong=";
+</body>
+  </html> 
